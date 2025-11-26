@@ -1,14 +1,10 @@
-{
+x{
   "swagger": "2.0",
   "info": {
     "title": "InovaTech API",
     "version": "1.0",
     "description": "Documentação da API do laboratório de criação de APIs"
   },
-  "host": "localhost:1313",
-  "schemes": [
-    "http"
-  ],
   "paths": {
     "/": {
       "get": {
