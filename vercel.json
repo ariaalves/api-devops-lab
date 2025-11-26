@@ -1,7 +1,11 @@
-"builds": [
+{
+  "version": 2,
+  "builds": [
     { "src": "app.py", "use": "@vercel/python" }
   ],
   "routes": [
-    { "src": "/swagger", "dest": "/app.py" },
-    { "src": "/(.*)", "dest": "/app.py" }
+    { "src": "/", "status": 308, "headers": { "Location": "/swagger" } },
+    { "src": "/(.*)", "dest": "app.py" }
   ]
+}
+
